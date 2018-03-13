@@ -4,6 +4,9 @@
 [[sect_introduction]]
 
 == Introduction
-
+LS-B is designed to aid the curation of neuroscience entities from the literature with the aim of supporting ongoing curation efforts in the Blue Brain Project (BBP), at the École
+Polytechnique Fédérale de Lausanne (EPFL). At the first release of this application we have developed a web service built using the Argo text mining workflow system (http://argo.nactem.ac.uk/). 
 
 Some technical information for the application can be found at: <<technicalInformation.adoc#, Technical Information>>
+
+The web service is available at: http://nactem.ac.uk/api/openminted/neuroscience/ (please be noted that this is not a web page hence cannot be accessed via web browsers). 
