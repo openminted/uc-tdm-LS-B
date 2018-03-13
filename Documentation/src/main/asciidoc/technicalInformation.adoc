@@ -1,0 +1,14 @@
+= Technical Information for ChEBI Application
+
+[[sect_technical_info]]
+
+== Technical information for ChEBI application
+
+// description of Argo
+Argo is a text-mining workbench that can be used to combine UIMA components into text-mining workflows. Argo provides components for a number of text-mining purposes. 
+
+
+The Workflow we have created is shown below.
+
+// pic of Argo workflow
+image::workflow.png[]

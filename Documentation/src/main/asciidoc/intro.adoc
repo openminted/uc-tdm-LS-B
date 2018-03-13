@@ -1,0 +1,9 @@
+= Introduction
+:ext-relative: adoc
+
+[[sect_introduction]]
+
+== Introduction
+
+
+Some technical information for the application can be found at: <<technicalInformation.adoc#, Technical Information>>
