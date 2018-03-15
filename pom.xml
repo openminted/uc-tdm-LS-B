@@ -33,13 +33,13 @@
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/openminted/uc-tdm-LS-A/issues</url>
+		<url>https://github.com/openminted/uc-tdm-LS-B/issues</url>
 	</issueManagement>
 
 	<scm>
 		<connection>scm:git:git://github.com/openminted/uc-tdm-LS-B</connection>
 		<developerConnection>scm:git:git@github.com:openminted/uc-tdm-LS-B.git</developerConnection>
-		<url>https://github.com/openminted/uc-tdm-LS-A</url>
+		<url>https://github.com/openminted/uc-tdm-LS-B</url>
 	  <tag>HEAD</tag>
   </scm>
 
