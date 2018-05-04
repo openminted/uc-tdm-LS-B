@@ -20,6 +20,12 @@ import org.apache.uima.util.InvalidXMLException;
 
 public class SimpleWorkflow {
 	public static void main(String[] args) throws UIMAException, IOException{
+		
+		if(args.length < 2) {
+			System.out.println("Usage: simpleReader.jar input_folder output_folder");
+			return;
+		}
+		
 		List<AnalysisEngineDescription> engines =  new LinkedList<AnalysisEngineDescription>();
 		
 		CollectionReaderDescription reader =  CollectionReaderFactory.createReaderDescription(ArgoPhenotypesXMIReader.class, 
