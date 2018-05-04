@@ -45,8 +45,28 @@ public class MyWritingJSON extends JCasAnnotator_ImplBase {
 
 	public static final String DEFAULT_ANNOTATION_TYPE = "uima.tcas.Annotation";
 	private static final String OUTPUT_FILE_EXTENSION = ".json";
-//	private static final String DEFAULT_CONTEXT = "{\n\t\t\"Token\" : \"UCompareTS:org.u_compare.shared.syntactic.Token\",\n\t\t\"UCompareTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/U_compareTypeSystem#\",\n\t\t\"BigMTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/CancerMechanisms#\",\n\t\t\"ThaliaTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/ThaliaTypeSystem#\",\n\t\t\"UniProt\" : \"http://www.uniprot.org/uniprot/\",\n\t\t\"UMLS\" : \"https://uts.nlm.nih.gov/metathesaurus.html?cui=\",\n\t\t\"HGNC\" : \"http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:\",\n\t\t\"CHEBI\" : \"https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:\",\n\t\t\"DrugBank\" : \"http://www.drugbank.ca/drugs/\",\n\t\t\"HMDB\" : \"http://www.hmdb.ca/metabolites/\",\n\t\t\"AnEM\" : \"http://www.nactem.ac.uk/anatomy/#\",\n\t\t\"NCBI\" : \"http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=\",\n\t\t\"ACROMINE\" : \"http://www.nactem.ac.uk/software/acromine/#\",\n\t\t\"ENVO\" : \"http://purl.obolibrary.org/obo/ENVO_\",\n\t\t\"CoL\" : \"http://www.catalogueoflife.org/annual-checklist/2017/details/species/id/\",\n\t\t\"Sentence\" : \"UCompareTS:org.u_compare.shared.syntactic.Sentence\",\n\t\t\"Gene\" : \"BigMTS:uk.ac.nactem.uima.bigm.Gene\",\n    \t\t\"Disease\" : \"BigMTS:uk.ac.nactem.uima.bigm.Disease\",\n\t\t\"Protein\" : \"BigMTS:uk.ac.nactem.uima.bigm.Protein\",\n\t\t\"Drug\" : \"BigMTS:uk.ac.nactem.uima.bigm.Drug\",\n\t\t\"Metabolite\" : \"BigMTS:uk.ac.nactem.uima.bigm.Metabolite\",\n\t\t\"Chemical\" : \"BigMTS:uk.ac.nactem.uima.bigm.ChemicalOrDrug\",\n\t\t\"Habitat\" : \"ThaliaTS:uk.ac.nactem.uima.thalia.Habitat\",\n\t\t\"Taxon\" : \"ThaliaTS:uk.ac.nactem.uima.thalia.Taxon\"\n\t}";
-	private static final String DEFAULT_CONTEXT = "{\n\t\t\"UCompareTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/U_compareTypeSystem#\",\n\t\t\"Sentence\" : \"UCompareTS:org.u_compare.shared.syntactic.Sentence\",\n\t\t\"NeuronTS\"=\"http:///uk/ac/nactem/uima/neuro.ecore\", \n\t\t\"NeuronTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/NeuroscienceTypeSystem#\",\n\t\t\"Neuron\" : \"NeuronTS:uk.ac.nactem.uima.neuro.Neuron\",\n\t\t\"BrainRegion\" : \"NeuronTS:uk.ac.nactem.uima.neuro.BrainRegion\",\n\t\t\"Synapse\" : \"NeuronTS:uk.ac.nactem.uima.neuro.Synapse\",\n\t\t\"IonicCurrent\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicCurrent\",\n\t\t\"ModelOragnism\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ModelOragnism\",\n\t\t\"NIFCELL\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Cell.owl#\",\n\t\t\"NIFMOL\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Molecule.owl#\",\n\t\t\"NIFNEURBR2\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-Brain-Bridge.owl#\",\n\t\t\"ILX\"=\"http://uri.interlex.org/base/ilx_\",\n\t\t\"NIFNEURBR\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-BrainRegion-Bridge.owl#\",\n\t\t\"NIFGA\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#\"}";
+	
+	private static final String DEFAULT_CONTEXT = "{\n\t\t\"UCompareTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/U_compareTypeSystem#\""
+			+ ",\n\t\t\"Sentence\" : \"UCompareTS:org.u_compare.shared.syntactic.Sentence\","
+			+ "\n\t\t\"NeuronTS\"=\"http:///uk/ac/nactem/uima/neuro.ecore\", "
+			+ "\n\t\t\"NeuronTS\" : \"http://nactem.ac.uk/schema/uima/typesystem/NeuroscienceTypeSystem#\","
+			+ "\n\t\t\"Neuron\" : \"NeuronTS:uk.ac.nactem.uima.neuro.Neuron\","
+			+ "\n\t\t\"BrainRegion\" : \"NeuronTS:uk.ac.nactem.uima.neuro.BrainRegion\","
+			+ "\n\t\t\"Synapse\" : \"NeuronTS:uk.ac.nactem.uima.neuro.Synapse\","
+			+ "\n\t\t\"IonicCurrent\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicCurrent\","
+			+ "\n\t\t\"ModelOragnism\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ModelOragnism\","
+			+ "\n\t\t\"IonicChannel\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicChannel\","
+			+ "\n\t\t\"IonicConductance\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicConductance\","
+			+ "\n\t\t\"ScientificUnit\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ScientificUnit\","
+			+ "\n\t\t\"ScientificValue\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ScientificValue\","
+			+ "\n\t\t\"NIFCELL\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Cell.owl#\","
+			+ "\n\t\t\"NIFMOL\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Molecule.owl#\","
+			+ "\n\t\t\"NIFNEURBR2\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-Brain-Bridge.owl#\","
+			+ "\n\t\t\"ILX\"=\"http://uri.interlex.org/base/ilx_\","
+			+ "\n\t\t\"NIFNEURBR\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-BrainRegion-Bridge.owl#\","
+			+ "\n\t\t\"NIFGA\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#\"}";
+	
+	
 	public static final String[] ID_SUFFIXES = { "id", "name" };
 	private static final String TMP_DIR = "/tmp";
 	private String targetTypeString;
