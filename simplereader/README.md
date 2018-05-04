@@ -1,0 +1,1 @@
+This simple reader receives two arguments: input directory and output directory. The input directory should contain XMI files. All corresponding JSON files will be stored in the output directory.
