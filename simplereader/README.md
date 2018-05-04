@@ -1,1 +1,1 @@
-This simple reader receives two arguments: input directory and output directory. The input directory should contain XMI files. All corresponding JSON files will be stored in the output directory.
+This simple reader is specific for the LS-B use case only. It receives two arguments: input directory and output directory. The input directory should contain XMI files. All corresponding JSON files containing Neuroscience entity annotations will be stored in the output directory.
