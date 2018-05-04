@@ -1,6 +1,7 @@
 package uk.ac.nactem.openminted;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,8 +29,12 @@ public class SimpleWorkflow {
 		
 		List<AnalysisEngineDescription> engines =  new LinkedList<AnalysisEngineDescription>();
 		
+		TypeSystemDescription builtInTypes = TypeSystemDescriptionFactory.createTypeSystemDescription(); 
+        TypeSystemDescription customTypes = TypeSystemDescriptionFactory.createTypeSystemDescriptionFromPath("descs/NeuroscienceTypeSystem.xml"); 
+        TypeSystemDescription allTypes = CasCreationUtils.mergeTypeSystems(Arrays.asList(builtInTypes, customTypes));
+        
 		CollectionReaderDescription reader =  CollectionReaderFactory.createReaderDescription(ArgoPhenotypesXMIReader.class, 
-				ArgoPhenotypesXMIReader.PARAM_FILE_DIRECTORY, args[0], ArgoPhenotypesXMIReader.PARAM_RECURSIVE, false);
+				allTypes, ArgoPhenotypesXMIReader.PARAM_FILE_DIRECTORY, args[0], ArgoPhenotypesXMIReader.PARAM_RECURSIVE, false);
 		
 		AnalysisEngineDescription writer  = AnalysisEngineFactory.createEngineDescription(MyWritingJSON.class,
 				MyWritingJSON.PARAM_NAME_CONTEXT_URL, "", 

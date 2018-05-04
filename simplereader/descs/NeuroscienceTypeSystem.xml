@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription
+	xmlns="http://uima.apache.org/resourceSpecifier">
+	<name>Neuroscience Type System</name>
+	<description />
+	<version>0.3</version>
+	<vendor />
+	<types>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.NeuroConcept</name>
+			<description>Basic concept for neuroscience.</description>
+			<supertypeName>uima.tcas.Annotation</supertypeName>
+			<features>
+				<featureDescription>
+					<name>id</name>
+					<description>ID in an external database.</description>
+					<rangeTypeName>uima.cas.String</rangeTypeName>
+					<multipleReferencesAllowed>false</multipleReferencesAllowed>
+				</featureDescription>
+			</features>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.Neuron</name>
+			<description>Neuron</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.Synapse</name>
+			<description>Synapse</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.BrainRegion</name>
+			<description>Brain region</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.IonicCurrent</name>
+			<description>Ionic current (channel)</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.Value</name>
+			<description>Value of a modelling parameter</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.ModelOrganism</name>
+			<description>Model organism</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.IonicChannel</name>
+			<description>Ionic Channel</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.IonicConductance</name>
+			<description>Ionic Conductance</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.ScientificValue</name>
+			<description>Scientific Value</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.ScientificUnit</name>
+			<description>Scientific Unit</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.OhmInputResistance</name>
+			<description>The ohmic input resistance characterizes the resistance
+				that links these stimuli-response pairs by Ohm's law.</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.NeuronDensity</name>
+			<description>An experimental value that specified the density of
+				neurons.</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.VolumeBrainRegion</name>
+			<description>An experimental value that is specifying the volume of a
+				brain region.</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.RestMembranePotential</name>
+			<description>Refers to the potential difference between the
+				intracellular and the extracellular medium when no stimuli are
+				applied.</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+		<typeDescription>
+			<name>uk.ac.nactem.uima.neuro.MaxIonicConductance</name>
+			<description>The maximal value that ionic conductances can take
+				(i.e., when 100% of the associate ion channels are open)
+			</description>
+			<supertypeName>uk.ac.nactem.uima.neuro.NeuroConcept</supertypeName>
+		</typeDescription>
+	</types>
+</typeSystemDescription>
