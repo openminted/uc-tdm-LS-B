@@ -54,7 +54,7 @@ public class MyWritingJSON extends JCasAnnotator_ImplBase {
 			+ "\n\t\t\"BrainRegion\" : \"NeuronTS:uk.ac.nactem.uima.neuro.BrainRegion\","
 			+ "\n\t\t\"Synapse\" : \"NeuronTS:uk.ac.nactem.uima.neuro.Synapse\","
 			+ "\n\t\t\"IonicCurrent\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicCurrent\","
-			+ "\n\t\t\"ModelOragnism\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ModelOragnism\","
+			+ "\n\t\t\"ModelOrganism\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ModelOrganism\","
 			+ "\n\t\t\"IonicChannel\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicChannel\","
 			+ "\n\t\t\"IonicConductance\" : \"NeuronTS:uk.ac.nactem.uima.neuro.IonicConductance\","
 			+ "\n\t\t\"ScientificUnit\" : \"NeuronTS:uk.ac.nactem.uima.neuro.ScientificUnit\","
@@ -64,7 +64,8 @@ public class MyWritingJSON extends JCasAnnotator_ImplBase {
 			+ "\n\t\t\"NIFNEURBR2\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-Brain-Bridge.owl#\","
 			+ "\n\t\t\"ILX\"=\"http://uri.interlex.org/base/ilx_\","
 			+ "\n\t\t\"NIFNEURBR\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-Neuron-BrainRegion-Bridge.owl#\","
-			+ "\n\t\t\"NIFGA\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#\"}";
+			+ "\n\t\t\"NIFGA\"=\"http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#\","
+			+ "\n\t\t\"NCBITaxon\"=\"http://purl.obolibrary.org/obo/NCBITaxon_\"}";
 	
 	
 	public static final String[] ID_SUFFIXES = { "id", "name" };
